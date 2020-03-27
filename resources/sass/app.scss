@@ -1,0 +1,172 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.bg-micolor
+{
+  background-size: cover;
+  @include media-breakpoint-between(xs,md) 
+  {
+    background-image: url("../pics/fondo.jpg");
+  }
+  @include media-breakpoint-between(lg,xl) 
+    {
+        background-color: #870000;
+  }
+}
+
+.bg-mifondo {
+  background-size: cover;
+}
+
+a.bg-micolor:hover,
+a.bg-micolor:focus,
+button.bg-micolor:hover,
+button.bg-micolor:focus
+{
+  background-color: #fff;
+}
+
+//Tamaño de  direcciones en contacto
+
+.direcciones-size
+{
+  @include media-breakpoint-up(xs)
+  {
+   	max-height: 345px;
+	}
+	@include media-breakpoint-up(xl) 
+  {
+   	max-height: 487px;
+	}
+}
+
+//NAV BAR FONT LINKS COLOR
+
+.navbar-light .navbar-nav .nav-link
+{
+  @include media-breakpoint-between(xs, md) 
+  {
+    color: #000;
+  }
+  @include media-breakpoint-between(lg, xl) 
+  {
+    color: #fff;
+  }
+}
+
+//BORDE SEGMENTADO HECHO A MANO
+
+.navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link:focus
+{    
+  @include media-breakpoint-between(xs, md) 
+  {
+    border:dashed 5px hsla(0, 95%, 35%, 1);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  }
+  @include media-breakpoint-between(lg, xl) 
+  {
+    border: 0px;
+    color: white;
+          background: rgba(230, 0, 0,0.9);
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;   
+  }
+}
+
+//SLIDER SIZE CARDS
+#libroslider2 .MS-content .item, #libroslider .MS-content .item 
+  {
+    display: inline-block;
+    margin:8px;
+     width: 31.5555%;
+    @include media-breakpoint-up(xs) 
+    {
+      width: 96.5%;
+    }
+    @include media-breakpoint-up(sm) 
+    {
+      width: 47.3333%;
+    }
+    
+    @include media-breakpoint-up(md) 
+    {
+      width: 31.3%;
+    }
+    @media (min-width: 768px) and (max-width: 850px) 
+    {
+      width: 30.7%;
+    }
+    @include media-breakpoint-up(lg) 
+    {
+      width: 31.25%;
+    } 
+    @include media-breakpoint-up(xl) 
+    {
+      width: 23.2222%;
+    } 
+    @media (min-width: 1500px) 
+    {
+      width: 23.4%;
+    }
+    @media (min-width: 1605px) 
+    {
+      width: 23.5%;
+    }
+    @media (min-width: 1786px) 
+    {
+      width: 23.65%;
+    }
+    @media (min-width: 1982px) 
+    {
+      width: 23.75%;
+    }
+    @media (min-width: 2128px) 
+    {
+      width: 23.75+0.10%;
+    }
+    @media (min-width: 2311px) 
+    {
+      width: 23.85+0.10%;
+    }
+    @media (min-width: 2533px) 
+    {
+      width: 23.95+0.10%;
+    }                        
+  }
+//FACEBOOK BANNER SIZE
+  #responsivefb
+  { 
+    @include media-breakpoint-up(md)
+    {
+      width: 0px; 
+    }
+    @include media-breakpoint-up(lg)
+    {
+      width: 180px; 
+    }
+    @include media-breakpoint-up(xl)
+    {
+      width: 500px; 
+    }
+
+  }
+
+//BRAND TEXT SIZE
+.brandtsize
+{
+  @include media-breakpoint-between(xs,sm)
+  {
+max-width: 50px
+  }
+  @include media-breakpoint-up(sm)
+  {
+max-width: auto;
+  }
+}
